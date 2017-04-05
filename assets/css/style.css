@@ -209,11 +209,7 @@ img {
 
 /*---------------------------------------------------------------------------*/
 /*BOOKLET.HTML CSS*/
-#background-page {
-	background-color: ;
-	background-image: url("assets/images/brickwall.jpg");
-	
-}
+
 
 #flipbook {
 	margin: auto;
@@ -237,12 +233,10 @@ img {
 
 }
 
-#pencil {
-	margin-left: 20.5%;
-	margin-top: 20%;
-	float: left;
-	background-color: white;
-	color: black;	
+#go-back {
+	margin-top: 2%;
+	margin-left: 25%;
+	padding: 0;
   }
 
 @media screen and (max-width: 940px) {
