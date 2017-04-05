@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<title>Flipbook Project</title>
+	<!-- LINK TO BOOTSTRAP, JQUERY, CSS, JAVASCRIPT -->
+		<link href="assets/css/reset.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="assets/javascript/turn.js" type="text/javaScript"></script>
+</head>
+<body>
+<!-- WELCOME MESSAGE DIV -->
+	<div id="main-container">
+	<div id="welcome">
+				<h1>Cre<span class="letter">a</span>te</h1>
+				<br>
+				<h3><span id="your">Your Own</span></h3>
+				<br>
+				<br>
+				<h5>Story</h5>
+			</div>
+		<!-- CREATE MAIN DIV AND INSIDE GIVE IT A BACKGROUND IMG -->
+		<div id="master-container">
+			<div id="image-container">
+				<img src="assets/images/backgroundimage.jpg" id="shelf-image">
+			</div>
+			<!-- CREATING FIRST ROW OF BOOK IMAGES -->
+			<div id="books">
+				<div id="container">
+					<ol>
+					<a href="input.html"><img src="assets/images/javascript.jpg" class="image-m" id="javascript" alt="javascript" height="90" width="90"></a>
+					<a href="input.html"><img src="assets/images/james.jpg" class="image-m" id="james" alt="james" height="90" width="90"></a>
+					<a href="input.html"><img src="assets/images/hamlet.jpg" class="image-m" id="hamlet" alt="hamlet" height="90" width="90"></a>
+				</div>
+				</ol>
+				<!-- CREATE SECOND ROW OF BOOK IMAGES -->
+				<div id="container-2">
+				<ol>
+					<a href="input.html"><img src="assets/images/holes.jpg" class="image-m" id="holes" alt="holes" height="90" width="90"></a>
+					<a href="input.html"><img src="assets/images/clifford.jpg" class="image-m" id="clifford" alt="clifford" height="90" width="90"></a>
+					<a href="input.html"><img src="assets/images/journal1.jpg" class="image-m" id="journal" alt="journal" height="90" width="90"></a>
+				</ol>
+				</div>
+				<!-- BUTTON TO DIRECT TO INPUT PAGE -->
+				<button type="button" id="start-button" class="btn btn-default"><a href="input.html">Start</a></button>
+			</div>
+			</div>
+
+
+	</div>
+	<!-- BOOTSTRAP JAVASCRIPT -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+	<script src="assets/javascript/js.js" type="text/javaScript"></script>
+	<script src="assets/javascript/code.js" type="text/javaScript"></script>
+</body>
+</html>
