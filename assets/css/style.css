@@ -1,4 +1,4 @@
-/* START CSS */
+/* index.html CSS--------------------------------------------------------------------------*/
 
 body {
 	
@@ -207,9 +207,10 @@ img {
 }
 
 
-/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
 /*BOOKLET.HTML CSS*/
 #background-page {
+	background-color: ;
 	background-image: url("assets/images/brickwall.jpg");
 	
 }
@@ -234,17 +235,21 @@ img {
 	max-width: 600px;
 	max-height: 489px;
 
-
 }
 
-.btn-p1 {
-	margin-left: 27.3%;
+#pencil {
+	margin-left: 20.5%;
+	margin-top: 20%;
+	float: left;
 	background-color: white;
-	width: 695px;
 	color: black;	
   }
 
 @media screen and (max-width: 940px) {
+	#background-page {
+		width: 400px;
+		height: 300px;
+	}
 	#flipbook {
 	width: 400px;
 	height: 300px;
