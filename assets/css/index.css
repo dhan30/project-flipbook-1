@@ -1,0 +1,266 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fafafa;
+}
+
+
+.main-container {
+	margin: auto;
+	width: 100%;
+	height: 740px;
+	background-color:green;
+	max-width: 960px;
+	background-color: #fafafa ;
+	background-repeat: no-repeat;
+	padding-bottom: 200px;
+	display : block;
+	
+}
+
+#master-container {
+	margin-top: 50px;
+	margin-left: 20px;
+	padding: 0;
+	border: none;
+	width:450px;
+	height:100%;
+	background-image:url("../images/shelf.png");
+	background-repeat:no-repeat;
+	background-size:100%;
+	display: inline-block;
+	}
+	#books{
+		width:400px;
+		border:none;
+	}
+
+
+	#container {
+	margin-top:70px;
+	margin-left:70px;
+	border: none;
+	}
+
+	#container-2{
+	margin-top:5px;
+	margin-left:70px;
+	border: none;
+	}
+
+
+img {
+	width:65px;
+	height:90px;
+	margin-left:20px;
+		}
+
+#book-1:hover {
+	width: 68px;
+	height: 93px;
+	border: 2px solid red;
+}
+
+#book-6:hover {
+	width: 68px;
+	height: 93px;
+	border: 2px solid red;
+}
+
+#book-2:hover {
+	width: 68px;
+	height: 93px;
+	border: 2px solid red;
+}
+
+#book-3:hover {
+	width: 68px;
+	height: 93px;
+	border: 2px solid red;
+}
+
+#book-4:hover {
+	width: 68px;
+	height: 93px;
+	border: 2px solid red;
+}
+
+#book-5:hover {
+	width: 68px;
+	height: 93px;
+	border: 2px solid red;
+}
+
+
+
+#start-button {
+	margin-top: 5px;
+	margin-left: 50px;
+	background-color: black;
+	width:327px;
+	height: 60px;
+	border-radius: 5px;
+}
+
+
+
+.btn a {
+	color:white;
+	font-size:20px;
+	font-weight: bold;
+	padding:15px 130px;
+	text-decoration: none;
+}
+
+
+
+#welcome {
+	float: right;
+	margin-right: 100px;
+	margin-top: 100px;
+	text-align:center;
+	}
+
+
+#start-button:hover {
+	background-color:#ecef97;
+	opacity:80%;
+}
+
+
+h1 {
+	font-size: 70px;
+	font-weight: bold;
+	}
+
+
+
+h3 {
+	font-size: 20px;
+	color: grey;
+	}
+
+
+
+h5 {
+	margin:0 auto;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+
+
+/*letter a*/
+.letter {
+	color: red;
+	border-bottom: solid;
+	border-color: black;
+	}
+
+
+
+/* for header*/
+
+#flipbook {
+	margin-top: -00px;
+	overflow: hidden;	
+	text-align: center;
+	background-color: black;
+	border-style: ridge;
+	border-width: 5px;
+	border-color: white;
+	color: white;
+}
+
+
+p {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	margin-left: 5px;
+	text-align: left;
+}
+
+.page {
+width: 300px;
+height: 500px;
+background-color: #e6eeff;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+color: black;
+}
+
+#page-2 {
+	background-color: yellow;
+}
+
+#flipbook iframe {
+	margin: 0 auto;
+	padding: 100px;
+}
+
+
+
+footer p {
+	text-align: center;
+	color:white;
+	padding-top:20px;
+	}
+
+	footer {
+		clear:both;
+		position:relative;
+		bottom:0;
+		background-color:#ccc;
+		height:60px;
+		margin-right:0;
+		margin-left:0;
+		margin-bottom:0;
+	}
+
+@media screen and (max-width: 768px) {
+	
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fafafa;
+}
+
+
+.main-container {
+	margin:0 auto;
+	padding:0;
+	width: 100%;
+	height: auto;
+	max-width:768px;
+	border:solid #fafafa; 
+	background-color: green#fafafa ;
+
+	}
+#welcome {
+	width:100%;
+	margin: auto;
+	border: solid #fafafa;
+	text-align:center;
+	}
+
+
+#master-container {
+	margin: 300px auto;
+	border: solid #fafafa;
+	width:450px;
+	height:100%;
+	background-image:url("assets/images/shelf.png");
+	background-size:100%;
+	display: block;
+}
+	

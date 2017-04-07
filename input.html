@@ -6,46 +6,48 @@
 	<!-- LINK TO BOOTSTRAP, JQUERY, CSS, JAVASCRIPT -->
 		<link href="assets/css/reset.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+		<link href="assets/css/style1.css" rel="stylesheet" type="text/css">
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 </head>
 
 <body>
-<div id ="main-page">
-
+<div id="main-wrapper">
 	<div id="nav-bar">
 		<nav id="navigator" class="navbar navbar-default navbar-fixed-top">
- 		 <div class="boot-container">
- 		   <ol class="breadcrumb">
- 			 <li id="links"><a href="index.html">Home</a></li>
- 			 <li id="links"><a href="#">Previous</a></li>
- 			 <li id="links" class="active">Instructions</li>
-			</ol>
-		  </div>
+		<h2>"Fiction is the truth inside the lie.."  -Stephen King</h2>
+ 		 	<div class="boot-container">
+ 		   		<ol class="breadcrumb">
+ 			 		<li id="links"><a href="index.html">Home</a></li>
+ 			 		<li id="links"><a href="#">Bookshelf</a></li>
+ 			 		<li id="links" class="active"><a href="#">Instructions</li>
+				</ol>
+		  	</div>
 		</nav>
 	</div>	
-
-<div id="input-box">
-	<div class="form-group">
-	<br>
-  	<label for="exampleTextarea">Enter your story here:</label>
- 		<textarea class="form-control" id="text-area" rows="10"></textarea>
-    	<br>
-    	<button type="submit" class="btn btn-primary" id="add-button" onclick="submitForm()"><span id="sub-book">A</span>dd page</button>
-    	<br>
-   		<br>
-   	 	<br>
-  	</div>
-
-	<div class="form-group row">
+<div id ="main-page">
+  <div id="input-box">
+  
+  <div class="form-group row">
 	  <label id="search-text" class="label">Search</label>
 		<div class="col-10">
 			<input class="form-control" type="textbox" placeholder="Choose an image" id="image-input"></input>
 			<button type="submit-2" class="btn-p" id="images-button">Subm<span id="sub-book">i</span>t</button>
   		</div>
 		<br>
-  		<div id="image-display"></div>
-			<a href="booklet.html"><button type="submit-2" class="back-btn" >Go back to <span id="sub-book">B</span>ook</button></a>
+  		<div id="image-display"></div>	
+		</div>
+
+	<div class="form-group">
+	<br>
+  	<label id="label-text" for="exampleTextarea">Enter your story here:</label>
+ 		<textarea class="form-control" id="text-area" rows="10"></textarea>
+    	<br>
+    	<button type="submit" class="btn btn-primary" id="add-button" onclick="submitForm()"><span id="sub-book">A</span>dd page</button>
+    	<a href="booklet.html"><button type="submit" class="btn btn-primary" id="back-button" >To Your Book</button></a>
+    	<br>
+   		<br>
+   	 	<br>
+  	</div>
 	</div>
 </div>
 

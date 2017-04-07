@@ -1,0 +1,127 @@
+/*====Start CSS=====================================================*/
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: auto;
+}
+
+#main-wrapper {
+	margin: auto;
+}
+
+#main-page {
+	width: 100%;
+	max-width: 1600px;
+	height: 100%;
+	max-height: 1700px;
+
+
+
+}
+
+#navigator {
+	width: 100%;
+	max-width: 1600px;
+	background-color: black;
+	border-radius: 5px;
+	border: 5px double #f3f3f3 ;
+	position: fixed;
+	padding-bottom: 5px;
+	font-style: italic;
+	
+
+}
+h2 {
+	font-family: "Comic";
+	font-style: bold;
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	
+}
+
+.breadcrumb {
+	width: 80%;
+	max-width: 250px;
+	background-color: white;
+	margin: auto;
+	font-style: normal;
+
+}
+
+#input-box {
+	margin: 120px 10px 10px 10px;
+	background-color: white;
+	border: 3px double black;
+	padding: 0px;
+}
+
+.form-group {
+	margin: auto;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	background-color: #e6e6e6;
+	width: 50%;
+	max-width: 1700px;
+	border: 2px solid black;
+	border-radius: 10px;
+
+}
+#search-text {
+	color: black;
+}
+#label-text {
+	margin: 0px 0px 0px 0px;
+
+}
+
+#text-area {
+	border: 2px dashed black;
+}
+
+#image-input {
+	border: 2px dashed black;
+}
+
+#main-footer {
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	background-color: black;
+	width: 100%;
+	max-width: 1600px;
+	padding: 20px; 
+	padding-top: 50px;
+	border: 3px solid black;
+}
+
+.item {
+	margin: 5px;
+}
+
+#add-button {
+	margin: auto;
+	background-color: black;
+	border: 1px solid white;
+}
+
+#back-button {
+	background-color: black;
+	border: 1px solid white;
+	
+}
+#add-button:hover {
+	background-color: grey;
+}
+#back-button:hover {
+	background-color: grey;
+}
+
+a {
+	color: black;
+}
+@media

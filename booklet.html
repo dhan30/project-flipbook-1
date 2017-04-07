@@ -6,17 +6,19 @@
 	<!-- LINK TO BOOTSTRAP, JQUERY, CSS, JAVASCRIPT -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link href="assets/css/reset.css" rel="stylesheet" type="text/css">
-		<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+		<link href="booklet.css" rel="stylesheet" type="text/css">
+		<!-- <link href="assets/css/style.css" rel="stylesheet" type="text/css"> -->
 		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script type="text/javaScript" src="assets/javascript/turn.js"></script>
 		
 </head>
 <body>
 <div id="background-page">
-<a href="input.html"><button type="submit" class="btn-p1" id="go-back">Go back to Input</button></a>
-
-<div id="flipbook">
-Welcome
+	<a href="input.html"><button type="submit" class="btn-p1" id="go-back">Go back to Input</button></a>
+<div class="jumbotron">
+  <div class="container">
+  	<div id="flipbook">
+		Welcome
 	<div class ="page" style="background-image:url(assets/images/pagebackground.png);">1
 		<div class="text-box-1 ">
 			<p><span id="story-text"> </span></p></div></div>
@@ -35,11 +37,18 @@ Welcome
 	<div class ="page" style="background-image:url(assets/images/pagebackground2.png);">6
 		<div class="text-box-1">
 			<p>..<span id="story-text"> </span></p></div></div>
-	
 	</div>
-		
+   
+  </div>
+</div>
+
+
+
+
+  	
 
 </div>
+
 
 
 
@@ -48,8 +57,8 @@ Welcome
 <script type="text/javaScript">
 
       $("#flipbook").turn({
-  		autoCenter: true,
-  		gradient: false
+  		autoCenter: false,
+  		gradient: true
 
 });
 

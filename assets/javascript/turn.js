@@ -42,9 +42,9 @@ var has3d,
 	// bl * br
 
 	corners = {
-		backward: ['tl'],
-		forward: ['tr'],
-		all: ['tl','tr',]
+		backward: ['bl', 'tl'],
+		forward: ['br', 'tr'],
+		all: ['tl','tr','br','bl']
 	},
 
 	displays = ['single', 'double'],

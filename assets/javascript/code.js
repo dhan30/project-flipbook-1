@@ -82,20 +82,36 @@
 
   database.ref().on("child_added", function(childSnapshot) {
 
-    console.log("hello");
     // Create HTML Objects
-    var newDiv = $("<div>");
+    var newDiv = $("<div class='page'>");
+    var newDiv2 = $("<div class='text-box-1'>")
     var newParagraph = $("<p>");
     var newImage = $("<img>");
-
+    //newImage.attr("src", "items[i]");
+    
     // Add HTML
+    newImage.attr("src", childSnapshot.val().Image);
     newParagraph.text(childSnapshot.val().Story);
     newImage.text(childSnapshot.val().Image);
-    newDiv.append(newParagraph).append(newImage);
-    $("#flipbook").append(newDiv);
+    newDiv2.append(newParagraph).append(newImage);
+    newDiv.append(newDiv2);
+    $(".page").append(newDiv);
     console.log(newParagraph);
   });
-
+//   firebase.database().ref(...).on('value'.function(snapshot) {
+//       var counter = 0;
+//       snapshot.forEach(function(minisnapshot) {
+//             alert("test");
+//             //
+//             minisnapshot.child("books").foreach(function(mainsnapshot) {
+//                   counter +=0.5;
+//                   var data = {
+//                         price:mainsnapshot.child("price").val() * counter;
+//                         ...
+//                   }
+//             }
+//       }
+// }
   //=============================================================================
   // FUNCTIONS
   //=============================================================================
