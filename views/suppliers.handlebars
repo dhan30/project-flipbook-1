@@ -1,0 +1,48 @@
+<!-- Authors: Janet Anderson and Thomas Fattah -->
+<!-- Step: 7 (Final Portfolio)  -->
+<!-- Date: June 5, 2020 -->
+<!-- Course: CS 340 -->
+
+<!-- Title -->
+<title>Ye Olde Robot Shoppe Suppliers</title>
+
+<!-- Form for SQL INSERT query for the Suppliers Entity (add a new supplier) -->
+<h1>Add a new supplier:</h1>
+<section>
+    <form method="post">
+        <div class="form-group row">
+            <label class="col">Enter Supplier Name:
+                <input class="form-control" type="text" name="name" maxlength="255" required />
+            </label>
+            <label class="col">Enter Supplier Planet:
+                <input class="form-control" type="text" name="planet" maxlength="255" required />
+            </label>
+        </div>
+        <input type="submit" class="btn btn-primary" value="Add Supplier" name="addSupplier" />
+    </form>
+</section>
+
+<br>
+
+<!-- Table that will display the results of a SQL SELECT query for the Suppliers Entity. -->
+<h1>Current Suppliers:</h1>
+<section>
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>Supplier ID</th>
+                <th>Name</th>
+                <th>Planet</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each results}}
+            <tr>
+                <td>{{ this.supplierID }}</td>
+                <td>{{ this.supplierName }}</td>
+                <td>{{ this.supplierPlanet }}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</section>

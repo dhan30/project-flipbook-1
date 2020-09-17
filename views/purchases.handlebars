@@ -1,0 +1,63 @@
+<!-- Authors: Janet Anderson and Thomas Fattah -->
+<!-- Step: 7 (Final Portfolio)  -->
+<!-- Date: June 5, 2020 -->
+<!-- Course: CS 340 -->
+
+<title>Ye Olde Robot Shoppe Purchases</title>
+
+<!-- Form for SQL INSERT query for the Purchases Entity (add a new purchase) -->
+<h1>Add a new purchase:</h1>
+<section>
+    <form method="post">
+        <div class="form-group row">
+            <label class="col" for="customerID">Select customer:
+                <select class="form-control" name="customerID">
+                    {{#each customers}}
+                    <option value="{{this.customerID}}">{{ this.customerID }}, {{ this.customerFirstName }}
+                        {{ this.customerLastName }}</option>
+                    {{/each}}
+                </select>
+            </label>
+            <label class="col">Enter Date of Purchase:
+                <input class="form-control" type="date" name="purchaseDate" required />
+            </label>
+        </div>
+        <input type="submit" class="btn btn-primary" value="Add Purchase" name="addPurchase" />
+    </form>
+</section>
+
+<br>
+
+<!--  Table that will display the results from a SQL SELECT query for the Purchases Entity.
+      The customer information (first name, last name) is gotten through a join with Customers. -->
+<h1>Current Purchases:</h1>
+<section>
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>Purchase ID</th>
+                <th>Purchase Date</th>
+                <th>Customer Name (ID)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each purchases}}
+            <tr>
+                <td>{{ this.purchaseID }}</td>
+                <td>{{moment this.purchaseDate format="YYYY-MM-DD"}}</td>
+                <td>{{ this.customerFirstName }} {{ this.customerLastName }} ({{ this.customerID }})</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</section>
+
+<br>
+
+<h2>Note:</h2>
+<section>
+    Since the program requirements only require one M:M relationship to be implemented. The M:M relationship between
+    the Purchases entity and the Items entity is not implemented. If it had been implemented, the employee would be
+    able to add what items they bought from the customer. As such, the employee can only document that a purchase
+    was made with the customer and the date.
+</section>
